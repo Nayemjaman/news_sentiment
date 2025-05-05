@@ -6,11 +6,11 @@ classifier = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingua
 
 def analyze_sentiment(text):
     try:
-        result = classifier(text[:512])[0]
+        result = classifier(text)[0]
         label = result['label']
 
         stars = int(label.split()[0])
-
+        print(stars)
         if stars <= 2:
             return "negative"
         elif stars == 3:

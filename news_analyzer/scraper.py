@@ -36,7 +36,7 @@ def get_first_headline(url):
             return "Invalid or unsupported URL."
 
         headline = headline_tag.text.strip() if headline_tag else "No headline found."
-        print("Headline:", headline)
+        # print("Headline:", headline)
         return headline
 
     except Exception as e:
