@@ -46,4 +46,4 @@ def get_first_headline(url):
 
 
 
-            # headline = soup.select_one(".lead_news h2 a, .lead_news h1 a")
+# headline = soup.select_one(".lead_news h2 a, .lead_news h1 a")
